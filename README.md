@@ -1,13 +1,13 @@
 # iOS-templates  
-iOS template projects, storyboard, xib, only code use auto layout.  
+iOS template projects, storyboard, xib, pure code use auto layout.  
   
-## xib (Xcode Interface Builder)  
+## No storyboard projects  
 #### step 1.  
-![remove_storyboard](./docs/remove_storyboard.png)  
+![remove_storyboard](./docs/remove_storyboard_0.png)  
 Remove `Main.storyboard` from project and `Info.plist`.  
-![xib_0](./docs/xib_0.png)  
+![xib_0](./docs/remove_storyboard_1.png)  
 Click to `Info.plit`  
-![xib_1](./docs/xib_1.png)  
+![xib_1](./docs/remove_storyboard_2.png)  
 You click `-` to remove  
 
 #### step 2.  
@@ -28,12 +28,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
-  
-#### step 3.  
-Create xib file, must be created with the same name as `ViewController`.  
-next set file's owner for your `ViewController` and connect view for xib view.  
-![xib_0](./docs/xib_2.png)  
-![xib_1](./docs/xib_3.png)  
-Set file's owner for your `ViewController`  
-![xib_2](./docs/xib_4.png)   
-Connect view for xib view.  
+[xib (xcode interface builder)](./docs/xib.md)  
+[pure code](./docs/pureCode.md)
