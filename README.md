@@ -31,8 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 #### step 3.  
 Create xib file, must be created with the same name as `ViewController`.  
 next set file's owner for your `ViewController` and connect view for xib view.  
+<<<<<<< HEAD
 ![xib_0](./docs/xib_2.png)  
 ![xib_1](./docs/xib_3.png)  
 Set file's owner for your `ViewController`  
 ![xib_2](./docs/xib_4.png)  
+=======
+![xib_0]("./img/xib_0.png")  
+![xib_1]("./img/xib_1.png")  
+Set file's owner for your `ViewController`  
+![xib_2]("./img/xib_2.png")  
+>>>>>>> parent of ca1002f... Fix README image path:
 Connect view for xib view.  
