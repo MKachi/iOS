@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var _nameBox: UITextField!
+    @IBOutlet weak var _messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func button_touchDown(_ sender: Any) {
+        _messageLabel.text = "Hello, I am " + _nameBox.text!
+    }
 }
-

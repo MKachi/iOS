@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="xib" customModuleProvider="target">
+            <connections>
+                <outlet property="_messageLabel" destination="8WP-Nf-tx5" id="MQh-HZ-Xnp"/>
+                <outlet property="_nameBox" destination="O5D-A3-ATE" id="4er-Ba-6p9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Jtq-fd-iOd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, I am xib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-Nf-tx5">
+                    <rect key="frame" x="10" y="285" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5D-A3-ATE">
+                    <rect key="frame" x="150" y="314" width="141" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKw-gG-Z2d">
+                    <rect key="frame" x="83" y="320" width="59" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD4-36-oew">
+                    <rect key="frame" x="165" y="352" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="button_touchDown:" destination="-1" eventType="touchDown" id="Rhz-aX-m8N"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pKw-gG-Z2d" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="14" id="2HM-EK-aB5"/>
+                <constraint firstItem="O5D-A3-ATE" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="8" symbolic="YES" id="2Yn-jL-S4m"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="centerX" secondItem="ZD4-36-oew" secondAttribute="centerX" id="9ZD-Ci-nPk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O5D-A3-ATE" secondAttribute="trailing" constant="84" id="Juz-qn-IbG"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="KkI-Aj-oaH"/>
+                <constraint firstItem="pKw-gG-Z2d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="83" id="Q6w-5z-Ns8"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="265" id="Uh4-4I-5zL"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VCM-Zn-jvd"/>
+                <constraint firstItem="O5D-A3-ATE" firstAttribute="leading" secondItem="pKw-gG-Z2d" secondAttribute="trailing" constant="8" symbolic="YES" id="WoC-Uw-vw7"/>
+                <constraint firstItem="ZD4-36-oew" firstAttribute="top" secondItem="O5D-A3-ATE" secondAttribute="bottom" constant="8" symbolic="YES" id="ye4-so-sEW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
