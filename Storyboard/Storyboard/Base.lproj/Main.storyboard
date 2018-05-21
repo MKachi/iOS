@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, I am Storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-Dr-JJl">
-                                <rect key="frame" x="102.5" y="289.5" width="170" height="21"/>
+                                <rect key="frame" x="10" y="289.5" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,22 +38,31 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoU-si-0B2">
                                 <rect key="frame" x="164.5" y="356.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="GIe-1W-1bk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cji-qD-g3r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="00d-hl-3bq"/>
                             <constraint firstItem="cji-qD-g3r" firstAttribute="top" secondItem="ehb-Dr-JJl" secondAttribute="bottom" constant="14" id="0bK-om-OIj"/>
+                            <constraint firstItem="ehb-Dr-JJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="4iu-Di-U1G"/>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AtV-p3-UIk"/>
                             <constraint firstItem="ehb-Dr-JJl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Co9-TK-oqk"/>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="top" secondItem="ehb-Dr-JJl" secondAttribute="bottom" constant="8" symbolic="YES" id="N12-aY-rlh"/>
                             <constraint firstItem="ehb-Dr-JJl" firstAttribute="centerX" secondItem="RoU-si-0B2" secondAttribute="centerX" id="UK3-ca-1Oh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aq4-3h-mfL" secondAttribute="trailing" constant="84" id="Vmc-Pj-Nn5"/>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="leading" secondItem="cji-qD-g3r" secondAttribute="trailing" constant="8" symbolic="YES" id="ffM-RJ-7JX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehb-Dr-JJl" secondAttribute="trailing" constant="10" id="nqD-Er-yAM"/>
                             <constraint firstItem="RoU-si-0B2" firstAttribute="top" secondItem="Aq4-3h-mfL" secondAttribute="bottom" constant="8" symbolic="YES" id="y0E-LQ-nbN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="_messageLabel" destination="ehb-Dr-JJl" id="fdJ-LV-RDG"/>
+                        <outlet property="_nameBox" destination="Aq4-3h-mfL" id="1pf-NC-Aub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

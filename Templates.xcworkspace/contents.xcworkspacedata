@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:xib/xib.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Storyboard/Storyboard.xcodeproj">
    </FileRef>
 </Workspace>
