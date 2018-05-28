@@ -37,6 +37,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoU-si-0B2">
                                 <rect key="frame" x="164.5" y="356.5" width="46" height="30"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="button_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="GIe-1W-1bk"/>

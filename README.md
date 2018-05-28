@@ -28,5 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 ```
+
+#### next steps  
 [xib (xcode interface builder)](./docs/xib.md)  
 [pure code](./docs/pureCode.md)
