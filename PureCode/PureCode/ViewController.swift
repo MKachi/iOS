@@ -76,7 +76,10 @@ class ViewController: UIViewController {
         _button.centerXAnchor.constraint(equalTo: _messageLabel.centerXAnchor).isActive = true
         _button.topAnchor.constraint(equalTo: _nameBox.bottomAnchor).isActive = true
         
-        view.updateConstraints()
+        _messageLabel.updateConstraints()
+        _nameBox.updateConstraints()
+        _nameLabel.updateConstraints()
+        _button.updateConstraints()
     }
     
     @objc func button_touchDown(_ sender : UIButton) {

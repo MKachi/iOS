@@ -22,25 +22,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, I am xib" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WP-Nf-tx5">
-                    <rect key="frame" x="10" y="285" width="355" height="21"/>
+                    <rect key="frame" x="10" y="289.5" width="355" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5D-A3-ATE">
-                    <rect key="frame" x="150" y="314" width="141" height="30"/>
+                    <rect key="frame" x="150" y="318.5" width="141" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKw-gG-Z2d">
-                    <rect key="frame" x="83" y="320" width="59" height="21"/>
+                    <rect key="frame" x="83" y="324.5" width="59" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD4-36-oew">
-                    <rect key="frame" x="165" y="352" width="46" height="30"/>
+                    <rect key="frame" x="164.5" y="356.5" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="button_touchDown:" destination="-1" eventType="touchDown" id="Rhz-aX-m8N"/>
@@ -49,18 +49,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="pKw-gG-Z2d" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="14" id="2HM-EK-aB5"/>
-                <constraint firstItem="O5D-A3-ATE" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="8" symbolic="YES" id="2Yn-jL-S4m"/>
-                <constraint firstItem="8WP-Nf-tx5" firstAttribute="centerX" secondItem="ZD4-36-oew" secondAttribute="centerX" id="9ZD-Ci-nPk"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O5D-A3-ATE" secondAttribute="trailing" constant="84" id="Juz-qn-IbG"/>
-                <constraint firstItem="8WP-Nf-tx5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="KkI-Aj-oaH"/>
-                <constraint firstItem="pKw-gG-Z2d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="83" id="Q6w-5z-Ns8"/>
-                <constraint firstItem="8WP-Nf-tx5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="265" id="Uh4-4I-5zL"/>
-                <constraint firstItem="8WP-Nf-tx5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VCM-Zn-jvd"/>
-                <constraint firstItem="O5D-A3-ATE" firstAttribute="leading" secondItem="pKw-gG-Z2d" secondAttribute="trailing" constant="8" symbolic="YES" id="WoC-Uw-vw7"/>
-                <constraint firstItem="ZD4-36-oew" firstAttribute="top" secondItem="O5D-A3-ATE" secondAttribute="bottom" constant="8" symbolic="YES" id="ye4-so-sEW"/>
+                <constraint firstItem="pKw-gG-Z2d" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="14" id="738-Qn-YTa"/>
+                <constraint firstItem="pKw-gG-Z2d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="83" id="819-Ye-Yld"/>
+                <constraint firstItem="O5D-A3-ATE" firstAttribute="top" secondItem="8WP-Nf-tx5" secondAttribute="bottom" constant="8" id="Hnw-pm-bTe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O5D-A3-ATE" secondAttribute="trailing" constant="84" id="OUb-LY-zxe"/>
+                <constraint firstItem="ZD4-36-oew" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PQ8-G0-kbS"/>
+                <constraint firstItem="O5D-A3-ATE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Wqa-hp-c4G"/>
+                <constraint firstItem="O5D-A3-ATE" firstAttribute="leading" secondItem="pKw-gG-Z2d" secondAttribute="trailing" constant="8" id="eHC-re-wWn"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nua-6y-1VA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8WP-Nf-tx5" secondAttribute="trailing" constant="10" id="pne-ab-LMV"/>
+                <constraint firstItem="ZD4-36-oew" firstAttribute="top" secondItem="O5D-A3-ATE" secondAttribute="bottom" constant="8" id="vNN-1n-SJu"/>
+                <constraint firstItem="8WP-Nf-tx5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xgt-Wj-mIV"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="75.5"/>
         </view>
     </objects>
 </document>
