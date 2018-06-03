@@ -33,20 +33,24 @@ class ViewController: UIViewController {
     func setUpUI()
     {
         _nameLabel = UILabel(frame: CGRect(x: 83, y: 324.5, width: 59, height: 21))
+        _nameLabel.translatesAutoresizingMaskIntoConstraints = false
         _nameLabel.text = "Name : "
         view.addSubview(_nameLabel)
         
         _button = UIButton(frame: CGRect(x: 164.5, y: 356.6, width: 55, height: 30))
+        _button.translatesAutoresizingMaskIntoConstraints = false
         _button.setTitle("Button", for: UIControlState.normal)
         _button.setTitleColor(UIColor.blue, for: UIControlState.normal)
         _button.addTarget(self, action: #selector(self.button_touchDown(_:)), for: UIControlEvents.touchDown)
         view.addSubview(_button)
         
         _nameBox = UITextField(frame: CGRect(x: 150, y: 318.5, width: 141, height: 30))
+        _nameBox.translatesAutoresizingMaskIntoConstraints = false
         _nameBox.borderStyle = UITextBorderStyle.roundedRect
         view.addSubview(_nameBox)
         
         _messageLabel = UILabel(frame: CGRect(x: 10, y: 289.5, width: 355, height: 21))
+        _messageLabel.translatesAutoresizingMaskIntoConstraints = false
         _messageLabel.textAlignment = NSTextAlignment.center
         _messageLabel.text = "Hello, I am PureCode"
         view.addSubview(_messageLabel)
@@ -57,29 +61,20 @@ class ViewController: UIViewController {
     func constraints(margins : UILayoutGuide)
     {
         _messageLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
-        _messageLabel.centerXAnchor.constraint(equalTo: _button.centerXAnchor, constant: 0).isActive = true
         _messageLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 10).isActive = true
         _messageLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 10).isActive = true
-        _messageLabel.bottomAnchor.constraint(equalTo: _nameLabel.topAnchor, constant: 14).isActive = true
-        _messageLabel.bottomAnchor.constraint(equalTo: _nameBox.topAnchor).isActive = true
+        _messageLabel.bottomAnchor.constraint(equalTo: _nameBox.topAnchor, constant: -8).isActive = true
         
-        _nameBox.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 84).isActive = true
-        _nameBox.leadingAnchor.constraint(equalTo: _nameLabel.trailingAnchor).isActive = true
-        _nameBox.bottomAnchor.constraint(equalTo: _button.topAnchor).isActive = true
-        _nameBox.topAnchor.constraint(equalTo: _messageLabel.bottomAnchor).isActive = true
-        _nameBox.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 0).isActive = true
-        
-        _nameLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         _nameLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 83).isActive = true
-        _nameLabel.topAnchor.constraint(equalTo: margins.topAnchor, constant: 14).isActive = true
+        _nameLabel.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 0).isActive = true
         
-        _button.centerXAnchor.constraint(equalTo: _messageLabel.centerXAnchor).isActive = true
-        _button.topAnchor.constraint(equalTo: _nameBox.bottomAnchor).isActive = true
+        _nameBox.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 0).isActive = true
+        _nameBox.leadingAnchor.constraint(equalTo: _nameLabel.trailingAnchor, constant: 8).isActive = true
+        _nameBox.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -83).isActive = true
+        _nameBox.widthAnchor.constraint(greaterThanOrEqualToConstant: 141).isActive = true
         
-        _messageLabel.updateConstraints()
-        _nameBox.updateConstraints()
-        _nameLabel.updateConstraints()
-        _button.updateConstraints()
+        _button.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
+        _button.topAnchor.constraint(equalTo: _nameBox.bottomAnchor, constant: 8).isActive = true
     }
     
     @objc func button_touchDown(_ sender : UIButton) {

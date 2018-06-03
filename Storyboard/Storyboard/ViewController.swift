@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var _messageLabel: UILabel!
-    @IBOutlet weak var _nameBox: UITextField!
+    @IBOutlet var _nameBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

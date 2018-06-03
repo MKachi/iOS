@@ -47,22 +47,22 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="346-1J-bWQ"/>
-                            <constraint firstItem="ehb-Dr-JJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102.5" id="5Az-A6-SO3"/>
+                            <constraint firstItem="ehb-Dr-JJl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="102.5" id="5Az-A6-SO3"/>
                             <constraint firstItem="RoU-si-0B2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CgP-ac-Gyl"/>
                             <constraint firstItem="ehb-Dr-JJl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DA8-4T-kHg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ehb-Dr-JJl" secondAttribute="trailing" constant="102.5" id="F39-Wo-THb"/>
+                            <constraint firstAttribute="trailing" secondItem="ehb-Dr-JJl" secondAttribute="trailing" constant="102.5" id="F39-Wo-THb"/>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="top" secondItem="ehb-Dr-JJl" secondAttribute="bottom" constant="8" id="Lpn-9u-61S"/>
-                            <constraint firstItem="cji-qD-g3r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="QoH-Oq-YiC"/>
+                            <constraint firstItem="cji-qD-g3r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="83" id="QoH-Oq-YiC"/>
                             <constraint firstItem="RoU-si-0B2" firstAttribute="top" secondItem="Aq4-3h-mfL" secondAttribute="bottom" constant="8" id="Ru6-ol-h1N"/>
                             <constraint firstItem="Aq4-3h-mfL" firstAttribute="leading" secondItem="cji-qD-g3r" secondAttribute="trailing" constant="8" id="SMA-k8-Wrp"/>
-                            <constraint firstItem="Aq4-3h-mfL" firstAttribute="top" secondItem="ehb-Dr-JJl" secondAttribute="bottom" constant="8" id="VaQ-d7-WXo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aq4-3h-mfL" secondAttribute="trailing" constant="84" id="Y1N-I5-EKI"/>
+                            <constraint firstAttribute="trailing" secondItem="Aq4-3h-mfL" secondAttribute="trailing" constant="84" id="Y1N-I5-EKI"/>
                             <constraint firstItem="cji-qD-g3r" firstAttribute="top" secondItem="ehb-Dr-JJl" secondAttribute="bottom" constant="14" id="kYv-AI-46L"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Xgn-HW-rtg"/>
                     </view>
                     <connections>
                         <outlet property="_messageLabel" destination="ehb-Dr-JJl" id="Y19-gN-fBn"/>
+                        <outletCollection property="_nameBox" destination="Aq4-3h-mfL" collectionClass="NSMutableArray" id="C9a-e1-Flb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
