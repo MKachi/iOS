@@ -30,36 +30,34 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func setUpUI()
-    {
-        _nameLabel = UILabel(frame: CGRect(x: 83, y: 324.5, width: 59, height: 21))
+    func setUpUI() {
+        _nameLabel = UILabel()
         _nameLabel.translatesAutoresizingMaskIntoConstraints = false
         _nameLabel.text = "Name : "
         view.addSubview(_nameLabel)
         
-        _button = UIButton(frame: CGRect(x: 164.5, y: 356.6, width: 55, height: 30))
+        _button = UIButton()
         _button.translatesAutoresizingMaskIntoConstraints = false
         _button.setTitle("Button", for: UIControlState.normal)
         _button.setTitleColor(UIColor.blue, for: UIControlState.normal)
         _button.addTarget(self, action: #selector(self.button_touchDown(_:)), for: UIControlEvents.touchDown)
         view.addSubview(_button)
         
-        _nameBox = UITextField(frame: CGRect(x: 150, y: 318.5, width: 141, height: 30))
+        _nameBox = UITextField()
         _nameBox.translatesAutoresizingMaskIntoConstraints = false
         _nameBox.borderStyle = UITextBorderStyle.roundedRect
         view.addSubview(_nameBox)
         
-        _messageLabel = UILabel(frame: CGRect(x: 10, y: 289.5, width: 355, height: 21))
+        _messageLabel = UILabel()
         _messageLabel.translatesAutoresizingMaskIntoConstraints = false
         _messageLabel.textAlignment = NSTextAlignment.center
         _messageLabel.text = "Hello, I am PureCode"
         view.addSubview(_messageLabel)
         
-        constraints(margins: view.layoutMarginsGuide);
+        constraints(margins: view.layoutMarginsGuide)
     }
     
-    func constraints(margins : UILayoutGuide)
-    {
+    func constraints(margins : UILayoutGuide) {
         _messageLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
         _messageLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 10).isActive = true
         _messageLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 10).isActive = true
