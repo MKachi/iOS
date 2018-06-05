@@ -59,17 +59,16 @@ class ViewController: UIViewController {
     
     func constraints(margins : UILayoutGuide) {
         _messageLabel.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
-        _messageLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 10).isActive = true
         _messageLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 10).isActive = true
+        _messageLabel.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -10).isActive = true
         _messageLabel.bottomAnchor.constraint(equalTo: _nameBox.topAnchor, constant: -8).isActive = true
         
-        _nameLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 83).isActive = true
-        _nameLabel.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 0).isActive = true
-        
         _nameBox.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 0).isActive = true
-        _nameBox.leadingAnchor.constraint(equalTo: _nameLabel.trailingAnchor, constant: 8).isActive = true
-        _nameBox.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -83).isActive = true
-        _nameBox.widthAnchor.constraint(greaterThanOrEqualToConstant: 141).isActive = true
+        _nameBox.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -84).isActive = true
+
+        _nameLabel.trailingAnchor.constraint(equalTo: _nameBox.leadingAnchor, constant: -8).isActive = true
+        _nameLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 83).isActive = true
+        _nameLabel.topAnchor.constraint(equalTo: _messageLabel.bottomAnchor, constant: 8).isActive = true
         
         _button.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
         _button.topAnchor.constraint(equalTo: _nameBox.bottomAnchor, constant: 8).isActive = true
