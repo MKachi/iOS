@@ -57,20 +57,20 @@ class ViewController: UIViewController {
     func constraints() {
         _messageLabel.snp.makeConstraints { (make) in
             make.centerX.equalTo(view.snp.centerX)
-            make.trailing.leading.equalTo(view.snp.trailing).offset(10)
+            make.leading.equalTo(view.snp.leading).offset(10)
+            make.trailing.equalTo(view.snp.trailing).offset(-10)
             make.bottom.equalTo(_nameBox.snp.top).offset(-8)
-        }
-        
-        _nameLabel.snp.makeConstraints { (make) in
-            make.leading.equalTo(view.snp.leading).offset(83)
-            make.centerY.equalTo(view.snp.centerY)
         }
         
         _nameBox.snp.makeConstraints { (make) in
             make.centerY.equalTo(view.snp.centerY)
-            make.leading.equalTo(_nameLabel.snp.trailing).offset(8)
-            make.trailing.equalTo(view.snp.trailing).offset(-83)
-            make.width.greaterThanOrEqualTo(141)
+            make.trailing.equalTo(view.snp.trailing).offset(-84)
+        }
+        
+        _nameLabel.snp.makeConstraints { (make) in
+            make.trailing.equalTo(_nameBox.snp.leading).offset(-8)
+            make.leading.equalTo(view.snp.leading).offset(84)
+            make.top.equalTo(_messageLabel.snp.bottom).offset(8)
         }
         
         _button.snp.makeConstraints { (make) in

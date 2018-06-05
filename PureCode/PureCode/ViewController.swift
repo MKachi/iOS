@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         _nameBox.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: -84).isActive = true
 
         _nameLabel.trailingAnchor.constraint(equalTo: _nameBox.leadingAnchor, constant: -8).isActive = true
-        _nameLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 83).isActive = true
+        _nameLabel.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 84).isActive = true
         _nameLabel.topAnchor.constraint(equalTo: _messageLabel.bottomAnchor, constant: 8).isActive = true
         
         _button.centerXAnchor.constraint(equalTo: margins.centerXAnchor, constant: 0).isActive = true
