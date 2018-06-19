@@ -1,6 +1,6 @@
 # iOS Study   
 iOS study projects.  
   
-* [Librarys](./docs/Libraries.md)
+* [Libraries](./docs/Libraries.md)
 * [UI](./docs/UI.md)  
 * [Animation](./docs/Animation.md)
