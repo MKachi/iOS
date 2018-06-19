@@ -1,0 +1,6 @@
+framework module Pods_SnapKitUI {
+  umbrella header "Pods-SnapKitUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

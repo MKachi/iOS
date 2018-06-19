@@ -6,4 +6,4 @@ next set file's owner for your `ViewController` and connect view for xib view.
 Set file's owner for your `ViewController`  
 ![xib_2](./xib_2.png)   
 Connect view for xib view.  
-[< Back](../README.md)  
+[< Back](UI.md)  

@@ -23,4 +23,4 @@ create podfile and use this command for turminal.
 ``` turminal
 $ pod install
 ```
-[< Back](../README.md)  
+[< Back](UI.md)  

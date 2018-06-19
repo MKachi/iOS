@@ -8,4 +8,4 @@ override func viewDidLoad() {
 
 ```
 You set background color in `ViewController.swift` method viewDidLoad()  
-[< Back](../README.md)  
+[< Back](UI.md)  
