@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="UIView Animation"/>
                                 <connections>
-                                    <action selector="uiViewAnimation_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="BQs-BH-Rd6"/>
+                                    <segue destination="Thv-eR-UzW" kind="show" id="olg-6h-nEE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX3-dk-AZl">
@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Timer Animation"/>
                                 <connections>
-                                    <action selector="timerAnimation_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="BTN-AK-PeP"/>
+                                    <segue destination="3nG-5A-aXo" kind="show" id="Y5t-vL-4ff"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2h-EX-Q03">
@@ -38,7 +38,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="ImageView Animation"/>
                                 <connections>
-                                    <action selector="imageViewAnimation_touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="efg-xV-Y6s"/>
+                                    <segue destination="Zbv-0e-sU2" kind="show" id="v9M-jr-yLl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,6 +62,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="151" y="257"/>
+        </scene>
+        <!--View AniVC-->
+        <scene sceneID="Pjb-Vp-I3Z">
+            <objects>
+                <viewController id="Thv-eR-UzW" customClass="ViewAniVC" customModule="NativeAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mt-ym-yqE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="y4R-k0-IWX">
+                                <rect key="frame" x="140" y="319" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="a7y-1L-Yi6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5S-cF-1HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-539"/>
+        </scene>
+        <!--Timer AniVC-->
+        <scene sceneID="HJT-v7-7eV">
+            <objects>
+                <viewController id="3nG-5A-aXo" customClass="TimerAniVC" customModule="NativeAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cb2-Cs-tgp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ohQ-T4-Dob"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNt-qw-MDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="121"/>
+        </scene>
+        <!--Image View AniVC-->
+        <scene sceneID="EVa-io-BAl">
+            <objects>
+                <viewController id="Zbv-0e-sU2" customClass="ImageViewAniVC" customModule="NativeAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fwn-iH-ohI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jmU-jZ-I2T"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEv-aT-lHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="795"/>
         </scene>
     </scenes>
 </document>

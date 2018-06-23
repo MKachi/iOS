@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  UIViewAniVC.swift
 //  NativeAnimation
 //
 //  Created by 김동영 on 2018. 6. 23..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class ViewAniVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  UIViewAniVC.swift
+//  TimerAniVC.swift
 //  NativeAnimation
 //
 //  Created by 김동영 on 2018. 6. 23..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UIViewAniVC: UIViewController {
+class TimerAniVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

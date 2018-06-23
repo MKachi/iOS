@@ -12,8 +12,9 @@
 		01361D8E20DE268A002253E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01361D8D20DE268A002253E5 /* Assets.xcassets */; };
 		01361D9120DE268A002253E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01361D8F20DE268A002253E5 /* LaunchScreen.storyboard */; };
 		01361D9920DE26B2002253E5 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01361D9820DE26B2002253E5 /* MainVC.swift */; };
-		01361D9B20DE27CA002253E5 /* UIViewAni.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01361D9A20DE27CA002253E5 /* UIViewAni.storyboard */; };
-		01361D9D20DE27D7002253E5 /* UIViewAniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01361D9C20DE27D7002253E5 /* UIViewAniVC.swift */; };
+		01361D9D20DE27D7002253E5 /* ViewAniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01361D9C20DE27D7002253E5 /* ViewAniVC.swift */; };
+		01361D9F20DE2C17002253E5 /* TimerAniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01361D9E20DE2C17002253E5 /* TimerAniVC.swift */; };
+		01361DA120DE2C38002253E5 /* ImageViewAniVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01361DA020DE2C38002253E5 /* ImageViewAniVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,9 @@
 		01361D9020DE268A002253E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01361D9220DE268A002253E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01361D9820DE26B2002253E5 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		01361D9A20DE27CA002253E5 /* UIViewAni.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIViewAni.storyboard; sourceTree = "<group>"; };
-		01361D9C20DE27D7002253E5 /* UIViewAniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAniVC.swift; sourceTree = "<group>"; };
+		01361D9C20DE27D7002253E5 /* ViewAniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAniVC.swift; sourceTree = "<group>"; };
+		01361D9E20DE2C17002253E5 /* TimerAniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAniVC.swift; sourceTree = "<group>"; };
+		01361DA020DE2C38002253E5 /* ImageViewAniVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewAniVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,9 @@
 				01361D8F20DE268A002253E5 /* LaunchScreen.storyboard */,
 				01361D9220DE268A002253E5 /* Info.plist */,
 				01361D9820DE26B2002253E5 /* MainVC.swift */,
-				01361D9A20DE27CA002253E5 /* UIViewAni.storyboard */,
-				01361D9C20DE27D7002253E5 /* UIViewAniVC.swift */,
+				01361D9C20DE27D7002253E5 /* ViewAniVC.swift */,
+				01361D9E20DE2C17002253E5 /* TimerAniVC.swift */,
+				01361DA020DE2C38002253E5 /* ImageViewAniVC.swift */,
 			);
 			path = NativeAnimation;
 			sourceTree = "<group>";
@@ -129,7 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01361D9B20DE27CA002253E5 /* UIViewAni.storyboard in Resources */,
 				01361D9120DE268A002253E5 /* LaunchScreen.storyboard in Resources */,
 				01361D8E20DE268A002253E5 /* Assets.xcassets in Resources */,
 				01361D8C20DE268A002253E5 /* Main.storyboard in Resources */,
@@ -144,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01361D8720DE268A002253E5 /* AppDelegate.swift in Sources */,
+				01361D9F20DE2C17002253E5 /* TimerAniVC.swift in Sources */,
 				01361D9920DE26B2002253E5 /* MainVC.swift in Sources */,
-				01361D9D20DE27D7002253E5 /* UIViewAniVC.swift in Sources */,
+				01361D9D20DE27D7002253E5 /* ViewAniVC.swift in Sources */,
+				01361DA120DE2C38002253E5 /* ImageViewAniVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
