@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		012CE47920E143E000122DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE47820E143E000122DAA /* AppDelegate.swift */; };
-		012CE47B20E143E000122DAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE47A20E143E000122DAA /* ViewController.swift */; };
+		012CE47B20E143E000122DAA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE47A20E143E000122DAA /* LoginVC.swift */; };
 		012CE47E20E143E000122DAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012CE47C20E143E000122DAA /* Main.storyboard */; };
 		012CE48020E143E000122DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012CE47F20E143E000122DAA /* Assets.xcassets */; };
 		012CE48320E143E000122DAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012CE48120E143E000122DAA /* LaunchScreen.storyboard */; };
+		0194D93B20E1577C002E5BCE /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0194D93920E1577C002E5BCE /* CategoryButton.swift */; };
+		0194D93C20E1577C002E5BCE /* CategoryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0194D93A20E1577C002E5BCE /* CategoryButton.xib */; };
 		D06532543FEED9D3DFC9C4C8 /* Pods_KakaoTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B7A5D3EA534599AFC5D41D /* Pods_KakaoTalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		012CE47520E143E000122DAA /* KakaoTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		012CE47820E143E000122DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		012CE47A20E143E000122DAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		012CE47A20E143E000122DAA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		012CE47D20E143E000122DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		012CE47F20E143E000122DAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012CE48220E143E000122DAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		012CE48420E143E000122DAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0194D93920E1577C002E5BCE /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		0194D93A20E1577C002E5BCE /* CategoryButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryButton.xib; sourceTree = "<group>"; };
 		0F823732475C138CDC7A291D /* Pods-KakaoTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-KakaoTalk/Pods-KakaoTalk.release.xcconfig"; sourceTree = "<group>"; };
 		7F06E986E60DB9F65DDD268A /* Pods-KakaoTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KakaoTalk/Pods-KakaoTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		97B7A5D3EA534599AFC5D41D /* Pods_KakaoTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,11 +66,13 @@
 			isa = PBXGroup;
 			children = (
 				012CE47820E143E000122DAA /* AppDelegate.swift */,
-				012CE47A20E143E000122DAA /* ViewController.swift */,
+				012CE47A20E143E000122DAA /* LoginVC.swift */,
 				012CE47C20E143E000122DAA /* Main.storyboard */,
 				012CE47F20E143E000122DAA /* Assets.xcassets */,
 				012CE48120E143E000122DAA /* LaunchScreen.storyboard */,
 				012CE48420E143E000122DAA /* Info.plist */,
+				0194D93920E1577C002E5BCE /* CategoryButton.swift */,
+				0194D93A20E1577C002E5BCE /* CategoryButton.xib */,
 			);
 			path = KakaoTalk;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012CE48320E143E000122DAA /* LaunchScreen.storyboard in Resources */,
+				0194D93C20E1577C002E5BCE /* CategoryButton.xib in Resources */,
 				012CE48020E143E000122DAA /* Assets.xcassets in Resources */,
 				012CE47E20E143E000122DAA /* Main.storyboard in Resources */,
 			);
@@ -201,7 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012CE47B20E143E000122DAA /* ViewController.swift in Sources */,
+				0194D93B20E1577C002E5BCE /* CategoryButton.swift in Sources */,
+				012CE47B20E143E000122DAA /* LoginVC.swift in Sources */,
 				012CE47920E143E000122DAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
