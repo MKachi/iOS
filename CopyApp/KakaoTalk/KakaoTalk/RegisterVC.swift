@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegisterVC.swift
 //  KakaoTalk
 //
 //  Created by 김동영 on 2018. 6. 26..
@@ -8,17 +8,17 @@
 
 import UIKit
 
-class LoginVC : UIViewController {
-
+class RegisterVC : UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
