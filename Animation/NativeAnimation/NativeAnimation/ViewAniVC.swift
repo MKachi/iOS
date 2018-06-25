@@ -9,14 +9,19 @@
 import UIKit
 
 class ViewAniVC: UIViewController {
+    @IBOutlet weak var _button1: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 2.0, delay: 0.0, animations: {
+            self.view.backgroundColor = UIColor.blue
+        }, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

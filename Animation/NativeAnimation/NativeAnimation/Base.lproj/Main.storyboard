@@ -72,14 +72,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="y4R-k0-IWX">
-                                <rect key="frame" x="140" y="319" width="94" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kD-Gt-ZVr">
+                                <rect key="frame" x="170" y="318.5" width="34" height="30"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="col-e0-KyB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3kD-Gt-ZVr" firstAttribute="centerX" secondItem="0mt-ym-yqE" secondAttribute="centerX" id="9mv-gC-uOR"/>
+                            <constraint firstItem="3kD-Gt-ZVr" firstAttribute="centerY" secondItem="0mt-ym-yqE" secondAttribute="centerY" id="Ait-e2-ffY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a7y-1L-Yi6"/>
                     </view>
+                    <connections>
+                        <outlet property="_button1" destination="3kD-Gt-ZVr" id="MTZ-q3-lNh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5S-cF-1HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNt-qw-MDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="121"/>
+            <point key="canvasLocation" x="1575" y="131"/>
         </scene>
         <!--Image View AniVC-->
         <scene sceneID="EVa-io-BAl">
