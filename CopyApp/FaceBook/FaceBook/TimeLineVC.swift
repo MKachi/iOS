@@ -11,11 +11,11 @@ import SnapKit
 
 let cellTag = "cellID"
 
-class MainVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class TimeLineVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView?.backgroundColor = UIColor.white
+        collectionView?.backgroundColor = UIColor(named: "BackgroundColor")
         collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellTag)
         navigationItem.title = "FaceBook"
     }
@@ -30,26 +30,10 @@ class MainVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200.0)
+        return CGSize(width: view.frame.width, height: 300.0)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-}
-
-class FeedCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setUp()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init has not been implemented!")
-    }
-    
-    func setUp() {
-        backgroundColor = UIColor.red
-        
     }
 }

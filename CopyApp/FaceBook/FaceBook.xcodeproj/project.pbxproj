@@ -10,7 +10,8 @@
 		015D32FE20E3DDC800AA5824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D32FD20E3DDC800AA5824 /* AppDelegate.swift */; };
 		015D330520E3DDC800AA5824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015D330420E3DDC800AA5824 /* Assets.xcassets */; };
 		015D330820E3DDC800AA5824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015D330620E3DDC800AA5824 /* LaunchScreen.storyboard */; };
-		0160349120E402D700E4F4D4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160349020E402D700E4F4D4 /* MainVC.swift */; };
+		0160349120E402D700E4F4D4 /* TimeLineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160349020E402D700E4F4D4 /* TimeLineVC.swift */; };
+		01F7B7DE20E8DF1100493736 /* TimeLineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F7B7DD20E8DF1100493736 /* TimeLineCard.swift */; };
 		75691D9D42B3DEEF401EBEEC /* Pods_FaceBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF2B2123ADEB041B453CC71 /* Pods_FaceBook.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +21,8 @@
 		015D330420E3DDC800AA5824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015D330720E3DDC800AA5824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		015D330920E3DDC800AA5824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0160349020E402D700E4F4D4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0160349020E402D700E4F4D4 /* TimeLineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineVC.swift; sourceTree = "<group>"; };
+		01F7B7DD20E8DF1100493736 /* TimeLineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCard.swift; sourceTree = "<group>"; };
 		AB9EF3396F3B7038B5633614 /* Pods-FaceBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceBook/Pods-FaceBook.release.xcconfig"; sourceTree = "<group>"; };
 		BAF2B2123ADEB041B453CC71 /* Pods_FaceBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8FD0FF9C0C7D31B2030AA8 /* Pods-FaceBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceBook/Pods-FaceBook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -63,7 +65,8 @@
 				015D330420E3DDC800AA5824 /* Assets.xcassets */,
 				015D330620E3DDC800AA5824 /* LaunchScreen.storyboard */,
 				015D330920E3DDC800AA5824 /* Info.plist */,
-				0160349020E402D700E4F4D4 /* MainVC.swift */,
+				0160349020E402D700E4F4D4 /* TimeLineVC.swift */,
+				01F7B7DD20E8DF1100493736 /* TimeLineCard.swift */,
 			);
 			path = FaceBook;
 			sourceTree = "<group>";
@@ -198,7 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				015D32FE20E3DDC800AA5824 /* AppDelegate.swift in Sources */,
-				0160349120E402D700E4F4D4 /* MainVC.swift in Sources */,
+				0160349120E402D700E4F4D4 /* TimeLineVC.swift in Sources */,
+				01F7B7DE20E8DF1100493736 /* TimeLineCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,12 +332,14 @@
 			baseConfigurationReference = EE8FD0FF9C0C7D31B2030AA8 /* Pods-FaceBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C37KREKJM;
 				INFOPLIST_FILE = FaceBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kachi.FaceBook;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kachi.facebook-copy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -344,12 +350,14 @@
 			baseConfigurationReference = AB9EF3396F3B7038B5633614 /* Pods-FaceBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C37KREKJM;
 				INFOPLIST_FILE = FaceBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kachi.FaceBook;
+				PRODUCT_BUNDLE_IDENTIFIER = "Kachi.facebook-copy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
