@@ -41,6 +41,13 @@ class FeedCell: UICollectionViewCell {
         return result
     }()
     
+    let linkButton: UIButton = {
+        let result = UIButton()
+        result.setTitle("공유하기", for: .normal)
+        result.setTitleColor(UIColor.black, for: .normal)
+        return result
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initializeUI()
@@ -57,6 +64,7 @@ class FeedCell: UICollectionViewCell {
         addSubview(nameLabel)
         addSubview(dateLabel)
         addSubview(underLine)
+        addSubview(linkButton)
     }
     
     private func initializeConstraints() {
@@ -77,11 +85,16 @@ class FeedCell: UICollectionViewCell {
         }
         
         underLine.snp.makeConstraints { (make) in
-            make.size.height.equalTo(0.5)
+            make.size.height.equalTo(1)
             make.bottom.equalTo(snp.bottom).offset(-40)
             make.centerX.equalTo(snp.centerX)
             make.leading.equalTo(snp.leading).offset(13)
             make.trailing.equalTo(snp.trailing).offset(-13)
+        }
+        
+        linkButton.snp.makeConstraints { (make) in
+            make.top.equalTo(underLine.snp.bottom).offset(4)
+            make.trailing.equalTo(snp.trailing).offset(-20)
         }
     }
     
