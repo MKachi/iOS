@@ -9,15 +9,26 @@
 import UIKit
 import SnapKit
 
-let cellTag = "cellID"
+class FeedVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-class TimeLineVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    let searchBar: UISearchBar = {
+        let result = UISearchBar()
+        return result
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = UIColor(named: "BackgroundColor")
-        collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellTag)
+        collectionView?.register(FeedCard.self, forCellWithReuseIdentifier: FeedCard.tag)
         navigationItem.title = "FaceBook"
+        
+        if case let controller = navigationController, controller != nil {
+            controller!.view.addSubview(searchBar)
+            searchBar.snp.makeConstraints { (make) in
+                make.centerX.equalTo(controller!.view.snp.centerX)
+                make.centerY.equalTo(controller!.view.snp.centerY)
+            }
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -25,7 +36,7 @@ class TimeLineVC: UICollectionViewController, UICollectionViewDelegateFlowLayout
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let result = collectionView.dequeueReusableCell(withReuseIdentifier: cellTag, for: indexPath)
+        let result = collectionView.dequeueReusableCell(withReuseIdentifier: FeedCard.tag, for: indexPath)
         return result
     }
     
