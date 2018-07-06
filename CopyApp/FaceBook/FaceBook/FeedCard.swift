@@ -9,6 +9,20 @@
 import UIKit
 import SnapKit
 
+extension UIButton {
+    static func createImageButton(title: String, image: UIImage?) -> UIButton {
+        let result = UIButton()
+        
+        result.setTitle(title, for: .normal)
+        result.setTitleColor(UIColor.black, for: .normal)
+        
+        result.setImage(image, for: .normal)
+        result.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
+        result.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        return result
+    }
+}
+
 class FeedCard: UICollectionViewCell {
     static let tag = "FeedCard"
     
@@ -33,28 +47,16 @@ class FeedCard: UICollectionViewCell {
         return result
     }()
     
-    let likeButton = FeedCard.createImageButton(title: "좋아요", image: UIImage(named: "Like"))
-    let commentButton = FeedCard.createImageButton(title: "댓글 달기", image: UIImage(named: "Comment"))
-    let sharedButton = FeedCard.createImageButton(title: "공유하기", image: UIImage(named: "Shared"))
-    
-    static func createImageButton(title: String, image: UIImage?) -> UIButton {
-        let result = UIButton()
-        
-        result.setTitle(title, for: .normal)
-        result.setTitleColor(UIColor.black, for: .normal)
-        
-        result.setImage(image, for: .normal)
-        result.titleEdgeInsets = UIEdgeInsetsMake(0, 8, 0, 0)
-        result.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-        return result
-    }
+    let likeButton = UIButton.createImageButton(title: "좋아요", image: UIImage(named: "Like"))
+    let commentButton = UIButton.createImageButton(title: "댓글 달기", image: UIImage(named: "Comment"))
+    let sharedButton = UIButton.createImageButton(title: "공유하기", image: UIImage(named: "Shared"))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initializeUI()
         initializeConstraints()
         
-        likeButton.addTarget(self, action: #selector(self.likeButton_touchUpInside(_:)), for: UIControlEvents.touchUpInside)
+//        likeButton.addTarget(self, action: #selector(self.likeButton_touchUpInside(_:)), for: UIControlEvents.touchUpInside)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -94,33 +96,33 @@ class FeedCard: UICollectionViewCell {
         
         sharedButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
-            make.bottom.equalTo(snp.bottom).offset(4)
-            make.trailing.equalTo(snp.trailing).offset(-20)
+            make.bottom.equalTo(snp.bottom).offset(-4)
+            make.trailing.equalTo(snp.trailing).offset(-25)
         }
         
         commentButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
-            make.bottom.equalTo(snp.bottom).offset(4)
-            make.centerX.equalTo(snp.centerX).offset(15)
+            make.bottom.equalTo(snp.bottom).offset(-4)
+            make.centerX.equalTo(snp.centerX)
         }
         
         likeButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
-            make.bottom.equalTo(snp.bottom).offset(4)
-            make.leading.equalTo(snp.leading).offset(50)
+            make.bottom.equalTo(snp.bottom).offset(-4)
+            make.leading.equalTo(snp.leading).offset(25)
         }
     }
     
     public func setData(name: String, profile: UIImage, date: String) {
         let attributedText = NSMutableAttributedString(string: name, attributes: [
             NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14)
-            ])
+        ])
         
         // date
         attributedText.append(NSAttributedString(string: "\n수요일 오후 3:01  •  ", attributes: [
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
             NSAttributedStringKey.foregroundColor: UIColor(red: 155 / 255, green: 161 / 255, blue: 161 / 255, alpha: 1)
-            ]))
+        ]))
         
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = 4
@@ -137,7 +139,7 @@ class FeedCard: UICollectionViewCell {
         profileImage.image = profile
     }
     
-    @objc private func likeButton_touchUpInside(_ sender: UIButton) {
-        
-    }
+//    @objc private func likeButton_touchUpInside(_ sender: UIButton) {
+//        
+//    }
 }
