@@ -19,6 +19,7 @@ extension UIButton {
         result.setImage(image, for: .normal)
         result.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
         result.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        result.titleLabel?.textAlignment = .left
         return result
     }
 }
@@ -28,7 +29,6 @@ class FeedCard: UICollectionViewCell {
     
     let profileImage: UIImageView = {
         let result = UIImageView()
-        result.image = UIImage(named: "Sample")
         result.contentMode = .scaleAspectFill
         result.layer.cornerRadius = 45 / 2
         result.layer.masksToBounds = true
@@ -72,6 +72,7 @@ class FeedCard: UICollectionViewCell {
         addSubview(sharedButton)
         addSubview(commentButton)
         addSubview(likeButton)
+        setData(name: "이름임", profile: UIImage(named: "Sample"), date: "수요일 오후 3:01  •  ")
     }
     
     private func initializeConstraints() {
@@ -94,32 +95,34 @@ class FeedCard: UICollectionViewCell {
             make.trailing.equalTo(snp.trailing).offset(-13)
         }
         
-        sharedButton.snp.makeConstraints { (make) in
+        likeButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
             make.bottom.equalTo(snp.bottom).offset(-4)
-            make.trailing.equalTo(snp.trailing).offset(-25)
+            make.leading.equalTo(snp.leading).offset(10)
+            make.width.equalTo(100)
         }
         
         commentButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
             make.bottom.equalTo(snp.bottom).offset(-4)
             make.centerX.equalTo(snp.centerX)
+            make.width.equalTo(100)
         }
         
-        likeButton.snp.makeConstraints { (make) in
+        sharedButton.snp.makeConstraints { (make) in
             make.top.equalTo(underLine.snp.bottom).offset(4)
             make.bottom.equalTo(snp.bottom).offset(-4)
-            make.leading.equalTo(snp.leading).offset(25)
+            make.trailing.equalTo(snp.trailing).offset(-20)
+            make.width.equalTo(100)
         }
     }
     
-    public func setData(name: String, profile: UIImage, date: String) {
+    public func setData(name: String, profile: UIImage?, date: String) {
         let attributedText = NSMutableAttributedString(string: name, attributes: [
             NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14)
         ])
         
-        // date
-        attributedText.append(NSAttributedString(string: "\n수요일 오후 3:01  •  ", attributes: [
+        attributedText.append(NSAttributedString(string: "\n\(date)", attributes: [
             NSAttributedStringKey.font: UIFont.systemFont(ofSize: 12),
             NSAttributedStringKey.foregroundColor: UIColor(red: 155 / 255, green: 161 / 255, blue: 161 / 255, alpha: 1)
         ]))
@@ -140,6 +143,6 @@ class FeedCard: UICollectionViewCell {
     }
     
 //    @objc private func likeButton_touchUpInside(_ sender: UIButton) {
-//        
+//
 //    }
 }
