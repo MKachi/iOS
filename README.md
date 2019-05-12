@@ -1,4 +1,4 @@
-# iOS Study   
+# iOS
 iOS study projects.  
   
 * [Libraries](./docs/Libraries.md)
